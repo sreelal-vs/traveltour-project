@@ -8,7 +8,7 @@ const Header = () => {
     <Container className="py-0  px-4 px-md-0">
       <Navbar expand="lg" className=" mt-3">
         <Container fluid className="p-0">
-          <Navbar.Brand as={Link}>Travel <span className="tour-text-color">Tour</span></Navbar.Brand>
+          <Navbar.Brand as={Link} className="logo">Travel <span className="tour-text">Tour</span></Navbar.Brand>
           <Row>
             <Col className=" d-block d-lg-none p-0"
             ><Button className="log-btn">Login</Button></Col>
@@ -20,18 +20,18 @@ const Header = () => {
                 placement="end"
               >
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                  <Offcanvas.Title  className="logo" id={`offcanvasNavbarLabel-expand-lg`}>
                     Travel Tour
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-center flex-grow-1 pe-3 ">
                     
-                    <Nav.Link >Home</Nav.Link>
-                    <Nav.Link >Pages</Nav.Link>
-                    <Nav.Link >Tour List</Nav.Link>
-                    <Nav.Link >Tour Search</Nav.Link>
-                    <Nav.Link >Blog</Nav.Link>
+                    <Nav.Link className="mx-lg-3 px-0">Home</Nav.Link>
+                    <Nav.Link className="mx-lg-3 px-0">Pages</Nav.Link>
+                    <Nav.Link className="mx-lg-3 px-0">Tour List</Nav.Link>
+                    <Nav.Link className="mx-lg-3 px-0">Tour Search</Nav.Link>
+                    <Nav.Link className="mx-lg-3 px-0">Blog</Nav.Link>
 
                   </Nav>
 

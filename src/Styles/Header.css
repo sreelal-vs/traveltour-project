@@ -1,16 +1,45 @@
 .navbar .navbar-brand{
     font-family: "DM Serif ";
-    font-size: 30px;
+    
+    
 }
+.navbar .nav-link
+{
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+.navbar .nav-link::after
+{
+    content: "";
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    width: 0px;
+    transition: all 0.5s ease-in-out ;
+}
+
+
+.nav-link:hover::after
+{
+    width: 100%;
+    transition: all 0.5s ease-in-out ;
+}
+
 .navbar
 {
     
     font-family: 'DM Sans';
 }
-.tour-text-color{
+.tour-text{
     color: #5C98F2;
 }
-
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+}
 @media screen and (max-width: 990px) {
     .offcanvas.offcanvas-end {
         width: 50% !important;
@@ -18,5 +47,5 @@
 }
 
 body{
-    min-width: 348px;
+    min-width: 378px;
 }
