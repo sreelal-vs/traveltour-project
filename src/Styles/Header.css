@@ -10,3 +10,13 @@
 .tour-text-color{
     color: #5C98F2;
 }
+
+@media screen and (max-width: 990px) {
+    .offcanvas.offcanvas-end {
+        width: 50% !important;
+    }
+}
+
+body{
+    min-width: 348px;
+}
